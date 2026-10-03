@@ -1,0 +1,27 @@
+[project]
+name = "mcpporj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hethenthira", email = "hethengokul@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=3.4.7",
+    "requests>=2.34.2",
+    "unicorn>=2.1.4",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+mcpporj = "mcpporj:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "GenAi",
+]
